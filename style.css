@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background: #f3f3f3;
+}
+
+header{
+    padding: 40px;
+    border-bottom: 7px solid #ffa201;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo .title{
+    font-size: 3rem;
+    margin-left: 10px;
+}
+.icon{
+    background: url('./assets/camera.svg') no-repeat center center/cover;
+    width: 50px;
+    aspect-ratio: 1;   
+}
+.search-bar{
+    position: relative;  
+    /* border: #ffa201 1px solid;  */
+}
+.search-bar input{
+    border-radius: 50px;
+    padding: 15px;
+    padding-left: 70px;
+    border: 1px solid #dedede;
+    outline: none;
+    width: 550px;
+    font-size: 25px;
+    /* border: red 1px solid;  */
+}
+.search-bar input:focus{
+    box-shadow: 0px 0px 10px #ffa201;
+}
+
+.search-icon{
+    background: url('./assets/search.svg') no-repeat center center/cover;
+    width: 40px;
+    aspect-ratio: 1; 
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+#images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* gap: 10px; */
+    width: 90%;
+    margin: 0 auto; 
+}
+.image{
+    background: #ffa201;
+    max-width: 100%;
+    aspect-ratio: 1.8;
+    margin: 20px ;
+    
+}
